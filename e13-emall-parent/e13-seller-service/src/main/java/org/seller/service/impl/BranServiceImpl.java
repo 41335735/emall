@@ -48,7 +48,6 @@ public class BranServiceImpl implements BrandService {
 			
 		}
 		
-		
 		PageHelper.startPage(pageNo, pageSize);//分页
 		Page<TbBrand> page =  (Page<TbBrand>) brandMapper.selectByExample(example);
 		Map<String,Object> result = new HashMap<String,Object>();
