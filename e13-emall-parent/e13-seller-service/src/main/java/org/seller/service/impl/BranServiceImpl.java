@@ -18,10 +18,6 @@ import com.alibaba.dubbo.config.annotation.Service;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 
-
-
-
-
 @Service
 public class BranServiceImpl implements BrandService {
 

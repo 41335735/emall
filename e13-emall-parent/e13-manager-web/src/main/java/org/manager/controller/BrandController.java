@@ -41,7 +41,7 @@ public class BrandController {
 	}
 	
 	@RequestMapping("/findById")
-	public TbBrand findById(@RequestBody Long id) {
+	public TbBrand findById(Long id) {
 		return brandService.findById(id);
 	}
 	@RequestMapping("/update")
