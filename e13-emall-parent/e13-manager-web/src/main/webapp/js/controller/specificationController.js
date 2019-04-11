@@ -13,10 +13,11 @@ app.controller('specificationController',function($scope,specificationService,$c
 	}
 
 
+
 	 //新增与修改
 	$scope.save=function(){
 		var obj = null; 
-		if($scope.entity.id != null){
+		if($scope.entity.specification.id != null){
 			obj = specificationService.update($scope.entity);
 		}else{
 			
@@ -58,6 +59,15 @@ app.controller('specificationController',function($scope,specificationService,$c
 		
 	}
 
-
+	
+	
+	//增加规格选项行
+	$scope.addTableRow = function(){
+		$scope.entity.specificationOptionList.push({});
+	}
+	//删除规则选项行
+	$scope.deleTableRow = function(index){
+		$scope.entity.specificationOptionList. splice(index,1);
+	}
 
 })

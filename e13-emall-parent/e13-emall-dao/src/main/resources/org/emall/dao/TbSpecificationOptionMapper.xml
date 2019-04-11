@@ -98,7 +98,7 @@
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="org.emall.entity.TbSpecificationOption" >
+  <insert id="insert"  parameterType="org.emall.entity.TbSpecificationOption" >
     insert into tb_specification_option (id, option_name, spec_id, 
       orders)
     values (#{id,jdbcType=BIGINT}, #{optionName,jdbcType=VARCHAR}, #{specId,jdbcType=BIGINT}, 

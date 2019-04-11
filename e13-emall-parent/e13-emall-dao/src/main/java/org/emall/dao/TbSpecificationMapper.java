@@ -19,7 +19,7 @@ public interface TbSpecificationMapper {
     List<TbSpecification> selectByExample(TbSpecificationExample example);
 
     TbSpecification selectByPrimaryKey(Long id);
-
+    
     int updateByExampleSelective(@Param("record") TbSpecification record, @Param("example") TbSpecificationExample example);
 
     int updateByExample(@Param("record") TbSpecification record, @Param("example") TbSpecificationExample example);

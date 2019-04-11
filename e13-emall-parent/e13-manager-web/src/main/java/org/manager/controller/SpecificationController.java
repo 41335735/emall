@@ -1,6 +1,7 @@
 package org.manager.controller;
 
 import org.common.api.ShopResult;
+import org.emall.entity.Specification;
 import org.emall.entity.TbSpecification;
 import org.seller.service.SpecificationService;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,9 +22,9 @@ public class SpecificationController {
 	}
 	
 	@RequestMapping("/add")
-	public ShopResult add(@RequestBody TbSpecification specification ){
+	public ShopResult add(@RequestBody Specification specification ){
 		try {
-			specificationService.add(specification);;
+			specificationService.add(specification);
 			return ShopResult.build(200, "增加成功");
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -33,11 +34,13 @@ public class SpecificationController {
 	}
 	
 	@RequestMapping("/findById")
-	public TbSpecification findById(Long id) {
-		return specificationService.findById(id);
+	public Specification findById(Long id) {
+		
+		 return specificationService.findById(id);
+		
 	}
 	@RequestMapping("/update")
-	public ShopResult update(@RequestBody TbSpecification specification){
+	public ShopResult update(@RequestBody Specification specification){
 		try {
 			specificationService.update(specification);
 			return ShopResult.build(200, "修改成功");
