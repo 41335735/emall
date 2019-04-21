@@ -11,6 +11,7 @@
 
 	<dubbo:protocol name="dubbo" port="20881" ></dubbo:protocol>
 	<dubbo:application name="emall-seller-service"/>
-	<dubbo:registry address="zookeeper://10.10.35.198:2181"/>
+	 <dubbo:registry address="zookeeper://10.10.35.198:2181"/>
+
 	<dubbo:annotation package="org.seller.service.impl"/>	
 </beans>

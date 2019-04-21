@@ -112,7 +112,8 @@
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="org.emall.entity.TbGoods" >
+  <insert id="insert" useGeneratedKeys="true" keyProperty="id" parameterType="org.emall.entity.TbGoods" >
+  	<!-- <selectKey resultType="java.lang.Long" order="AFTER" keyProperty="id">SELECT LAST_INSERT_ID() AS id</selectKey> -->
     insert into tb_goods (id, seller_id, goods_name, 
       default_item_id, audit_status, is_marketable, 
       brand_id, caption, category1_id, 

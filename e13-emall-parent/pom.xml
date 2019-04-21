@@ -24,11 +24,15 @@
 		<activemq.version>5.11.2</activemq.version>
 		<security.version>3.2.3.RELEASE</security.version>		
 		<solrj.version>4.10.3</solrj.version>
-		<ik.version>2012_u6</ik.version>		
+		<ik.version>2012_u6</ik.version>
+		<spring.version>4.2.4.RELEASE</spring.version>		
 	</properties>
 	
 	<dependencyManagement>
 		<dependencies>	
+		
+			
+		
 		
 			<!-- Spring -->
 			<dependency>
@@ -180,6 +184,12 @@
 				<version>${activemq.version}</version>
 			</dependency>
 			<!-- 身份验证 -->
+			 <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-core -->
+			<dependency>
+			    <groupId>org.springframework.security</groupId>
+			    <artifactId>spring-security-core</artifactId>
+			    <version>4.1.0.RELEASE</version>
+			</dependency>	
 			<dependency>
 				<groupId>org.springframework.security</groupId>
 				<artifactId>spring-security-web</artifactId>
@@ -270,6 +280,27 @@
 			    <version>2.9.8</version>
 			</dependency>
 	        	
+	         	
+	       	
+	        	
+	        <dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-core</artifactId>
+				<version>${spring.version}</version>
+		    </dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-web</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			
+			<!-- https://mvnrepository.com/artifact/org.csource/fastdfs-client-java -->
+			<dependency>
+			    <groupId>org.csource.fastdfs</groupId>
+			    <artifactId>fastdfs</artifactId>
+			    <version>1.2</version>
+			</dependency>
+			
 		</dependencies>	
 	
 	</dependencyManagement>
@@ -299,5 +330,6 @@
 		<module>e13-seller-service</module>
 		<module>e13-emall-common</module>
 		<module>e13-manager-web</module>
+		<module>e13-shop-web</module>
 	</modules>
 </project>

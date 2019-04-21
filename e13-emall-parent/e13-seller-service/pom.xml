@@ -80,7 +80,7 @@
     	 	 <artifactId>e13-emall-dao</artifactId>
    			 <version>0.0.1-SNAPSHOT</version>
  	</dependency>
- 	
+ 		
  	<dependency>
  			 <groupId>org</groupId>
     	 	 <artifactId>e13-seller-api</artifactId>

@@ -36,12 +36,12 @@
 						<img src="../img/5874a555Ne8192324.jpg" />
 					</div>
 					<div id="profile" class="tab-pane  active">
-						<form class="sui-form">
+						<form class="sui-form" action="/login"  method="post" id="subform">
 							<div class="input-prepend"><span class="add-on loginname"></span>
-								<input id="prependedInput" type="text" placeholder="邮箱/用户名/手机号" class="span2 input-xfat">
+								<input id="prependedInput" type="text" placeholder="邮箱/用户名/手机号" class="span2 input-xfat" name="username">
 							</div>
 							<div class="input-prepend"><span class="add-on loginpwd"></span>
-								<input id="prependedInput" type="password" placeholder="请输入密码" class="span2 input-xfat">
+								<input id="prependedInput" type="password" placeholder="请输入密码" class="span2 input-xfat" name="password">
 							</div>
 							<div class="setting">
 								 <div id="slider">
@@ -50,7 +50,7 @@
 									</div>
 							</div>
 							<div class="logined">
-								<a class="sui-btn btn-block btn-xlarge btn-danger" href="admin/index.html" target="_blank">登&nbsp;&nbsp;录</a>
+								<a class="sui-btn btn-block btn-xlarge btn-danger" onclick="document.getElementById('subform').submit()" target="_blank">登&nbsp;&nbsp;录</a>
 							</div>
 						</form>
 

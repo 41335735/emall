@@ -1,6 +1,8 @@
 package org.emall.entity;
 
-public class TbItemCat {
+import java.io.Serializable;
+
+public class TbItemCat  implements Serializable{
     private Long id;
 
     private Long parentId;
